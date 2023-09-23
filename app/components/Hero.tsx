@@ -8,11 +8,11 @@ function Hero({userInput}:any) {
   return (
     <div className='text-center'>
       <div>
-        <Image src='/bg.png' alt='hero-image'
-        width={800} height={200}
-        className='w-full absolute mt-[-50px]'/> 
+        <Image src='/beer_city.png' alt='hero-image'
+        width={400} height={200}
+        className='w-full absolute mt-[-50px] opacity-20'/> 
         <div className='mt-[70px] z-10'>
-            <h2 className='text-[55px] text-red-600 tracking-widest font-semibold'>
+            <h2 className='text-[55px] text-orange-600 tracking-widest font-semibold'>
                 SÖR-TÉRKÉP
             </h2>
             <h2 className='text-[20px]'>
@@ -24,11 +24,11 @@ function Hero({userInput}:any) {
                 type="text" 
                 placeholder='Keresés...'
                 className='z-10
-                bg-white p-3 border-[1px] rounded-full px-5 w-[36%] shadow-sm outline-red-600'
+                bg-white p-3 border-[1px] rounded-full px-5 w-[36%] shadow-sm outline-orange-600'
                 />
                 <button 
                 onClick={()=>userInput(searchInput)}
-                className='bg-red-600 rounded-full p-3 shadow-md z-10 cursor-pointer hover:scale-105 transition-all'>
+                className='bg-orange-600 rounded-full p-3 shadow-md z-10 cursor-pointer hover:scale-105 transition-all'>
                 <svg xmlns="http://www.w3.org/2000/svg" 
                 fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" 
                 className="w-6 h-6 text-white">
@@ -38,17 +38,17 @@ function Hero({userInput}:any) {
                 </button>
             </div>
             <div className='mt-5 flex flex-col justify-center items-center'>
-                <h2>Or Browse the category</h2>
+                <h2>Vagy válassz sört!</h2>
                 <div className='
                 grid grid-cols-3 md:grid-cols-7
                 w-[50%] justify-center gap-5 mt-3
                 '>
                     {category.map((item,index)=>(
                         <div key={index} className='
-                        border-[1px] w-[60px] p-4 bg-white rounded-full z-10
-                        hover:border-red-600 hover:scale-110 cursor-pointer transition-all'>
+                        border-[1px] w-100 p-4 bg-white rounded-full z-10
+                        hover:border-orange-600 hover:scale-110 cursor-pointer transition-all'>
                             <Image src={item.icon} alt={item.name}
-                            width={30} height={30}/>
+                            width={50} height={50}/>
                         </div>
                     ))}
                 </div>

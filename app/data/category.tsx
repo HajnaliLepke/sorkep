@@ -1,38 +1,29 @@
 export default[
 {
     id:1,
-    name:'Restaruants',
-    icon:'/Restaurant.png'
+    name:'Dreher',
+    icon:'/dreher.png'
 },
 {
     id:2,
-    name:'Gas Stations',
-    icon:'/GasStation.png'
+    name:'Soproni',
+    icon:'/soproni.png'
 },
 {
     id:3,
-    name:'Groceries',
-    icon:'/Ingredients.png'
+    name:'Arany Ászok',
+    icon:'/aszok.png'
 },
 {
     id:4,
-    name:'Cafes',
-    icon:'/Cafe.png'
-},
-{
-    id:5,
-    name:'Brewary',
-    icon:'/Beer.png'
-},
-{
-    id:6,
-    name:'Bank',
-    icon:'/Bank.png'
-},
-{
-    id:7,
-    name:'More',
-    icon:'/Ellipsis.png'
+    name:'Kőbányai',
+    icon:'/kobanyai.png'
 }
+//,
+// {
+//     id:7,
+//     name:'More',
+//     icon:'/Ellipsis.png'
+// }
 ];
 

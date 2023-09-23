@@ -9,7 +9,7 @@ function PlaceList({placeList}:any) {
     const [selectedPlace,setSelectedPlace] = useState<any>([]);
   return (
     <div className='px-[10px] md:px-[120px] mt-7 z-10'>
-        <h2 className='text-[20px] font-bold'>Search Results</h2>
+        <h2 className='text-[20px] font-bold'>Helyek:</h2>
         <div className='grid 
         grid-cols-2 
         md:grid-cols-3 
@@ -40,7 +40,7 @@ function PlaceList({placeList}:any) {
         gap-5
         '>
         {[1,2,3,4,5,6,7].map((item,index)=>(
-            <Skelton/>
+            <Skelton key={index}/>
             ))}
         </div>
         :null
