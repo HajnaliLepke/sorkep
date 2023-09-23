@@ -40,12 +40,12 @@ function Hero({userInput}:any) {
             <div className='mt-5 flex flex-col justify-center items-center'>
                 <h2>Vagy válassz sört!</h2>
                 <div className='
-                grid grid-cols-3 md:grid-cols-7
+                grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4
                 w-[50%] justify-center gap-5 mt-3
                 '>
                     {category.map((item,index)=>(
                         <div key={index} className='
-                        border-[1px] w-100 p-4 bg-white rounded-full z-10
+                        border-[1px] w-[75px] p-4 bg-white rounded-full z-10
                         hover:border-orange-600 hover:scale-110 cursor-pointer transition-all'>
                             <Image src={item.icon} alt={item.name}
                             width={50} height={50}/>
